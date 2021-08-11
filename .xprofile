@@ -1,0 +1,5 @@
+# key repeat rate
+xset r rate 250 &
+
+# stop screen going blank
+xset s off -dpms &
