@@ -37,24 +37,24 @@ for_window [class="Mailspring"] move to workspace $ws10
 
 for_window [class="DrRacket"] move to workspace $ws5
 
-##Polar Night
+# Polar Night
 set $nord-grey1 #2e3440
 set $nord-grey2 #3b4252
 set $nord-grey3 #434c5e
 set $nord-grey4 #4c566a
 
-#Snow Storm
+# Snow Storm
 set $nord-white1 #d8dee9
 set $nord-white2 #e5e9f0
 set $nord-white3 #eceff4
 
-#Frost
+# Frost
 set $nord-frost1 #8fbcbb
 set $nord-frost2 #88c0d0
 set $nord-frost3 #81a1c1
 set $nord-frost4 #5e81ac
 
-#Aurora
+# Aurora
 set $nord-red #bf616a
 set $nord-orange #d08770
 set $nord-yellow #ebcb8b
@@ -63,7 +63,7 @@ set $nord-pink #b48ead
 
 set $background-nord #aa2e3440
 
-#class                      border        backgr       text	    indicator   childborder
+# class                      border        backgr       text	    indicator   childborder
 client.focused		    $nord-white3 $nord-grey1  $nord-white1  $nord-white1  $nord-white1
 client.focused_inactive	    $nord-grey1  $nord-grey1  $nord-white1  $nord-grey4   $nord-grey4
 client.unfocused	    $nord-grey1  $nord-grey1  $nord-white1  $nord-grey4   $nord-grey4
