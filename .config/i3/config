@@ -61,7 +61,7 @@ set $nord-yellow #ebcb8b
 set $nord-green #a3be8c
 set $nord-pink #b48ead
 
-set $background-nord #aa2e3440
+set $background-nord #a2e3440
 
 # class                      border        backgr       text	    indicator   childborder
 client.focused		    $nord-white3 $nord-grey1  $nord-white1  $nord-white1  $nord-white1
@@ -74,7 +74,6 @@ client.background	    $nord-grey1
 for_window [class=".*"] border pixel 3
 
 gaps inner 16
-
 gaps top 24
 
 set $mod Mod4
@@ -215,8 +214,10 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # reload the configuration file
 bindsym $mod+Shift+y reload
+
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
+
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+q exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
