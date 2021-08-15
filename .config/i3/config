@@ -110,8 +110,11 @@ bindsym $mod+Shift+z exec zathura
 # start ranger (file manager)
 bindsym $mod+Shift+g exec $term -e bash -c 'ranger'
 
-# take a screenshot
+# take a screenshot and save to screenshots folder
 bindsym $mod+Print --release exec scrot -s ~/images/screenshots/`date +%Y-%m-%d_%H-%M-%S`.png
+
+# take a screenshot and copy to clipboard
+bindsym $mod+Shift+Print --release exec scrot -se 'xclip -selection clipboard -t image/png -i $f'
 
 # kill focused window
 bindsym $mod+Shift+c kill
