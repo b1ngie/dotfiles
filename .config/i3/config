@@ -22,7 +22,7 @@ exec --no-startup-id nitrogen --restore
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
-exec --no-startup-id i3-msg "workspace 1; exec alacritty"
+exec --no-startup-id i3-msg "workspace 1; exec $term"
 exec --no-startup-id discord
 exec --no-startup-id spotify
 exec --no-startup-id firefox
@@ -98,14 +98,17 @@ bindsym $mod+Shift+Return exec $term
 # start firefox
 bindsym $mod+Shift+w exec firefox
 
-# start rofi (a program launcher)
+# start rofi (program launcher)
 bindsym $mod+p exec rofi -show drun
 
-# start neovim (a text editor)
-bindsym $mod+Shift+e workspace 5; exec alacritty -e bash -c 'nvim'
+# start neovim (text editor)
+bindsym $mod+Shift+e workspace 5; exec $term -e bash -c 'nvim'
 
-# start zathura (a pdf viewer)
+# start zathura (pdf viewer)
 bindsym $mod+Shift+z exec zathura
+
+# start ranger (file manager)
+bindsym $mod+Shift+g exec $term -e bash -c 'ranger'
 
 # take a screenshot
 bindsym $mod+Print --release exec scrot -s ~/images/screenshots/`date +%Y-%m-%d_%H-%M-%S`.png
