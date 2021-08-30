@@ -2,7 +2,7 @@
 Arch Linux dotfiles
 
 ## Details
-OS: GNU/Linux
+OS: GNU/Linux  
 Distro: Arch
 WM: i3
 Bar: polybar
