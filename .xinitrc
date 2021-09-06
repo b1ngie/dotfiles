@@ -36,4 +36,6 @@ fi
 
 [ -f ~/.xprofile ] && . ~/.xprofile
 
-exec i3
+solaar --window=hide &
+
+exec i3 
