@@ -1,3 +1,5 @@
 /images/*
+!/images/screenshots
+/images/screenshots/*
 !/images/screenshots/dotfiles
 !/images/wallpapers
