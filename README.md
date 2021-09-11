@@ -1,5 +1,5 @@
 # dotfiles
-Arch Linux dotfiles
+bingie's dotfiles :)
 
 ## Details
 OS: GNU/Linux  
