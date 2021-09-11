@@ -7,8 +7,8 @@ exec_always --no-startup-id picom -b --experimental-backends
 # start polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
-# restore nitrogen wallpaper
-exec --no-startup-id nitrogen --restore
+# set wallpaper
+exec --no-startup-id feh --bg-fill $HOME/images/wallpapers/bidule_3840x2160.jpg
 
 exec --no-startup-id i3-msg "workspace 1; exec $term"
 exec --no-startup-id discord
@@ -98,10 +98,10 @@ bindsym $mod+Shift+z exec zathura
 bindsym $mod+Shift+g exec $term -e bash -c 'ranger'
 
 # take a screenshot and save to screenshots folder
-bindsym $mod+Print exec maim -s ~/images/screenshots/`date +%Y-%m-%d_%H-%M-%S`.png
+bindsym $mod+Print exec maim -su ~/images/screenshots/`date +%Y-%m-%d_%H-%M-%S`.png
 
 # take a screenshot and copy to clipboard
-bindsym $mod+Shift+Print exec maim -s | xclip -selection clipboard -t image/png
+bindsym $mod+Shift+Print exec maim -su | xclip -selection clipboard -t image/png
 
 # kill focused window
 bindsym $mod+Shift+c kill
