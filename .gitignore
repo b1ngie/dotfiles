@@ -1,5 +1,5 @@
 images/
 !images/wallpapers
 
-!images/screenshots/
-images/screenshots/dotfiles
+images/screenshots/
+!images/screenshots/dotfiles
