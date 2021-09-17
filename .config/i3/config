@@ -51,7 +51,7 @@ set $nord-pink #b48ead
 
 set $background-nord #a2e3440
 
-# class                      border        backgr       text	    indicator   childborder
+# class                     border       backgr       text          indicator     childborder
 client.focused		    $nord-white3 $nord-grey1  $nord-white1  $nord-white1  $nord-white1
 client.focused_inactive	    $nord-grey1  $nord-grey1  $nord-white1  $nord-grey4   $nord-grey4
 client.unfocused	    $nord-grey1  $nord-grey1  $nord-white1  $nord-grey4   $nord-grey4
@@ -82,7 +82,7 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Shift+Return exec $term
 
-# start firefox
+# start firefox (web browser)
 bindsym $mod+Shift+w exec firefox
 
 # start rofi (program launcher)
