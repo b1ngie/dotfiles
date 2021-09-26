@@ -1,10 +1,10 @@
-# start i3-auto-layout
+# launch i3-auto-layout
 exec_always --no-startup-id i3-auto-layout
 
-# start picom
+# launch picom
 exec_always --no-startup-id picom -b --experimental-backends
 
-# start polybar
+# launch polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # set wallpaper
@@ -79,22 +79,22 @@ set $right semicolon
 # use Mouse+Mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# start a terminal
+# launch a terminal
 bindsym $mod+Shift+Return exec $term
 
-# start firefox (web browser)
+# launch firefox (web browser)
 bindsym $mod+Shift+w exec firefox
 
-# start rofi (program launcher)
+# launch rofi (program launcher)
 bindsym $mod+p exec rofi -show drun
 
-# start neovim (text editor)
+# launch neovim (text editor)
 bindsym $mod+Shift+e workspace 5; exec $term -e bash -c 'nvim'
 
-# start zathura (pdf viewer)
+# launch zathura (pdf viewer)
 bindsym $mod+Shift+z exec zathura
 
-# start ranger (file manager)
+# launch ranger (file manager)
 bindsym $mod+Shift+g exec $term -e bash -c 'ranger'
 
 # take a screenshot and save to screenshots folder
