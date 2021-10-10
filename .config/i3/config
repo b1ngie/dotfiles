@@ -24,6 +24,7 @@ for_window [class="Mailspring"] move to workspace $ws10
 for_window [class="Atom"] move to workspace $ws5
 for_window [class="DrRacket"] move to workspace $ws5
 for_window [class="Zathura"] move to workspace $ws6
+for_window [class="GitKraken"] move to workspace $ws7
 
 # Polar Night
 set $nord-grey1 #2e3440
