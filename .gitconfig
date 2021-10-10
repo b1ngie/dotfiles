@@ -1,5 +1,9 @@
 [user]
 	name = bingie
-	email = 41744562+b1ngie@users.noreply.github.com
+	email = 41744562+bingie@users.noreply.github.com
 [core]
 	editor = /usr/bin/nvim
+[color]
+	ui = auto
+[init]
+	defaultBranch = main

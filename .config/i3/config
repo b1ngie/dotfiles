@@ -16,14 +16,14 @@ exec --no-startup-id spotify
 exec --no-startup-id firefox
 exec --no-startup-id mailspring
 
-#for_window [class="alacritty"] move to workspace $ws1
 for_window [class="discord"] move to workspace $ws2
 for_window [class="Spotify"] move to workspace $ws3
 for_window [class="firefox"] move to workspace $ws4
-for_window [class="Zathura"] move to workspace $ws6
 for_window [class="Mailspring"] move to workspace $ws10
 
+for_window [class="Atom"] move to workspace $ws5
 for_window [class="DrRacket"] move to workspace $ws5
+for_window [class="Zathura"] move to workspace $ws6
 
 # Polar Night
 set $nord-grey1 #2e3440
@@ -88,8 +88,8 @@ bindsym $mod+Shift+w exec firefox
 # launch rofi (program launcher)
 bindsym $mod+p exec rofi -show drun
 
-# launch neovim (text editor)
-bindsym $mod+Shift+e workspace 5; exec $term -e bash -c 'nvim'
+# launch atom (text editor)
+bindsym $mod+Shift+e exec atom
 
 # launch zathura (pdf viewer)
 bindsym $mod+Shift+z exec zathura
