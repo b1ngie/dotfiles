@@ -8,6 +8,6 @@
 alias ls="exa"
 alias dotfiles="cd ~/projects/git/dotfiles"
 
-PS1="\[\033[32m\]  \[\033[37m\]\[\033[34m\]\w \[\033[0m\]"
+PS1="\[\033[37m\]\[\033[34m\]\w \[\033[0m\]"
 
 neofetch
